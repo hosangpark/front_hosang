@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/myphoto.jpg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowRightCircle , ArrowLeftCircle} from 'react-bootstrap-icons';
+import { IoMdPerson } from 'react-icons/io';
+import { FaBirthdayCake, FaMapMarkerAlt} from 'react-icons/fa';
+import { BsFillPencilFill } from 'react-icons/bs';
+import { IoMdCall } from 'react-icons/io';
+import { GrMail } from 'react-icons/gr';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -11,7 +16,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "웹 개발자", "웹 디자이너" ];
+  const toRotate = [ "웹 개발자", "웹디자이너" ];
   const period = 2000;
 
   useEffect(() => {
@@ -46,9 +51,14 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
+  let card = document.querySelector('.intro_card')
+  const card_reverse = () => {
+    card.classList.toggle('reverseon')
+  }
 
   return (
     <section className="banner" id="home">
+
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={5}>
@@ -60,19 +70,29 @@ export const Banner = () => {
               </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>
-                  <br></br>끊임없이 발전하는
-                  <br></br>
-                  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
-                  <span className="wrap">{text}</span></span><br></br>{` 박호상입니다`}</h1>
-                  
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
+            <div className="intro_cardbox">
+            <span className="tagline">Welcome to my Portfolio</span>
+              <div className="intro_card">
+                <div className="card_front">
+                  <h1>
+                    끊임없이 발전하는<br></br>
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
+                    <span className="wrap">{text}</span></span><br></br>{`박호상입니다`}</h1>
+                  <button className="about_button" onClick={card_reverse}>About me <ArrowRightCircle size={25}/></button>
+                </div>
+                <div className="card_back">
+                  <div className="about_card">
+                    <li><IoMdPerson size={40}/><span><p>이름</p><p>박호상</p></span></li>
+                    <li><FaBirthdayCake size={40}/><span><p>생년월일</p><p>94.07.15</p></span></li>
+                    <li><FaMapMarkerAlt size={40}/><span><p>주소지</p><p>부산광역시 사하구</p></span></li>
+                    <li><IoMdCall size={40}/><span><p>연락처</p><p>010-2927-0185</p></span></li>
+                    {/* <li><GrMail size={40}/><span><p>메일</p><p>ekzmapaqjf@gmail.com</p></span></li>
+                    <li><BsFillPencilFill size={40}/><span><p>학력</p><p>동명대(심리학과)</p></span></li> */}
+                  </div>
+                  <button className="intro_button" onClick={card_reverse}><ArrowLeftCircle size={25}/> Intro</button>
+                </div>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
