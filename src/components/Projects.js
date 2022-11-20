@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import meter0 from "../assets/video/portfolio.webm";
-import meter1 from "../assets/video/baggu.webm";
+import meter0 from "../assets/video/portfolio.mp4";
+import meter1 from "../assets/video/baggu.mp4";
 import meter2 from "../assets/video/todayhome.webm";
 import meter3 from "../assets/video/movie.webm";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -31,28 +31,29 @@ export const Projects = () => {
                   <source src={meter0}/>
                 </video>
                 <h5>Portfolio (React-반응형)</h5>
-                <a href="">바로가기</a><a href='https://github.com/hosangpark/front_hosang'>소스코드</a>
+                <a href="">바로가기</a><a href='https://github.com/hosangpark/front_hosang' target="_blank">소스코드</a>
               </div>
               <div className="item">
                 <video muted autoPlay loop>
                   <source src={meter1}/>
                 </video>
                 <h5>BAGGU 리뉴얼(React)</h5>
-                <a href="https://hosangpark.github.io/project_baggu/">바로가기</a><a href='https://github.com/hosangpark/project_baggu'>소스코드</a>
+                <a href="https://hosangpark.github.io/project_baggu/" target="_blank">바로가기</a><a href='https://github.com/hosangpark/project_baggu' target="_blank">소스코드</a>
               </div>
               <div className="item">
                 <video muted autoPlay loop>
                   <source src={meter2}/>
                 </video>
                 <h5>오늘의집 리뉴얼(모바일-반응형)</h5>
-                <a href='https://hosangpark.github.io/project_todayhome/uiux.html'>바로가기</a><a href='https://github.com/hosangpark/baggu'>소스코드</a>
+                <a href="#!" onClick={() => window.open('https://hosangpark.github.io/project_todayhome/uiux.html', '_blank','width=500, height=700')}
+                >바로가기</a><a href='https://github.com/hosangpark/baggu' target="_blank">소스코드</a>
               </div>
               <div className="item">
                 <video muted autoPlay loop>
                   <source src={meter3}/>
                 </video>
                 <h5>영화예매 사이트(반응형)</h5>
-                <a href='https://hosangpark.github.io/project_movie/React_index.html'>바로가기</a><a href='https://github.com/hosangpark/baggu'>소스코드</a>
+                <a href='https://hosangpark.github.io/project_movie/React_index.html' target="_blank">바로가기</a><a href='https://github.com/hosangpark/baggu' target="_blank">소스코드</a>
               </div>
           </Carousel>
         </Row>
