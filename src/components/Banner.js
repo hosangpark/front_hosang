@@ -6,7 +6,7 @@ import { IoMdPerson } from 'react-icons/io';
 import { FaBirthdayCake, FaMapMarkerAlt} from 'react-icons/fa';
 import { BsFillPencilFill } from 'react-icons/bs';
 import { IoMdCall } from 'react-icons/io';
-import { GrMail } from 'react-icons/gr';
+import { BsGithub } from 'react-icons/bs';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -75,10 +75,10 @@ export const Banner = () => {
               <div className="intro_card">
                 <div className="card_front">
                   <h1>
-                    끊임없이 발전하는<br></br>
+                    끊임없이 성장하는<br></br>
                     <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
                     <span className="wrap">{text}</span></span><br></br>{`박호상입니다`}</h1>
-                  <button className="about_button" onClick={card_reverse}>About me <ArrowRightCircle size={25}/></button>
+                  <button className="about_button" onClick={card_reverse}>Profile <ArrowRightCircle size={25}/></button>
                 </div>
                 <div className="card_back">
                   <div className="about_card">
@@ -86,8 +86,8 @@ export const Banner = () => {
                     <li><FaBirthdayCake size={40}/><span><p>생년월일</p><p>94.07.15</p></span></li>
                     <li><FaMapMarkerAlt size={40}/><span><p>주소지</p><p>부산광역시 사하구</p></span></li>
                     <li><IoMdCall size={40}/><span><p>연락처</p><p>010-2927-0185</p></span></li>
-                    {/* <li><GrMail size={40}/><span><p>메일</p><p>ekzmapaqjf@gmail.com</p></span></li>
-                    <li><BsFillPencilFill size={40}/><span><p>학력</p><p>동명대(심리학과)</p></span></li> */}
+                    <li><BsGithub size={40}/><span><p>Github</p><a href='https://github.com/hosangpark?tab=repositories'>이동하기</a></span></li>
+                    {/* <li><BsFillPencilFill size={40}/><span><p>학력</p><p>단국대(심리학과)중퇴</p></span></li> */}
                   </div>
                   <button className="intro_button" onClick={card_reverse}><ArrowLeftCircle size={25}/> Intro</button>
                 </div>
