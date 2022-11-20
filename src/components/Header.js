@@ -29,7 +29,7 @@ export const Header = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="#!">
             <h2 className="logo">PHS's Portfolio</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -46,7 +46,7 @@ export const Header = () => {
               <Nav.Link href="#history" className={activeLink === 'history' ? 'active navbar-link' : 'navbar-link'} 
               onClick={() => onUpdateActiveLink('history')}>History</Nav.Link>
               <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} 
-              onClick={() => onUpdateActiveLink('contact')}>contact</Nav.Link>
+              onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
