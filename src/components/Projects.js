@@ -27,14 +27,14 @@ export const Projects = () => {
           <h2>Projects</h2>
           <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
               <div className="item">
-                <video muted autoPlay loop>
+                <video preload="auto" muted autoPlay loop>
                   <source src={meter0}/>
                 </video>
                 <h5>Portfolio (React-반응형)</h5>
                 <a href="">바로가기</a><a href='https://github.com/hosangpark/front_hosang' target="_blank">소스코드</a>
               </div>
               <div className="item">
-                <video muted autoPlay loop>
+                <video preload="auto" muted autoPlay loop>
                   <source src={meter1}/>
                 </video>
                 <h5>BAGGU 리뉴얼(React)</h5>
@@ -42,7 +42,7 @@ export const Projects = () => {
                 <a href='https://github.com/hosangpark/project_baggu' target="_blank">소스코드</a>
               </div>
               <div className="item">
-                <video muted autoPlay loop>
+                <video preload="auto" muted autoPlay loop>
                   <source src={meter2}/>
                 </video>
                 <h5>오늘의집 리뉴얼(모바일-반응형)</h5>
@@ -50,7 +50,7 @@ export const Projects = () => {
                 <a href='https://github.com/hosangpark/project_todayhome' target="_blank">소스코드</a>
               </div>
               <div className="item">
-                <video muted autoPlay loop>
+                <video preload="auto" muted autoPlay loop>
                   <source src={meter3}/>
                 </video>
                 <h5>영화예매 사이트(반응형)</h5>
