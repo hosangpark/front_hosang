@@ -15,10 +15,10 @@ export const History = () => {
       <Container>
         <Row>
           <h2>History</h2>
-          <Col md={5} xl={4}>
+          <Col md={4} xl={3}>
             <img className="history_img" src={myphoto2}></img>
           </Col>
-          <Col xs={12} md={7} xl={8}>
+          <Col xs={12} md={8} xl={9}>
             <TrackVisibility>
                 {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
@@ -49,24 +49,10 @@ export const History = () => {
                 {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                     <div className="history_wrap">
-                      <div className="history_date">2019.04 ~ 2019.11 </div>
-                      <div className="history_icon"><IoMdBoat/></div>
-                      <div className="history_text">
-                        <p>정일글로벌(주)</p><p>항만하역 관리감독</p>
-                      </div>
-                    </div>
-                    <div className="history_wrap">
-                      <div className="history_date">2020.03 ~ 2020.12 </div>
+                      <div className="history_date">2019.09 ~ 2021.06 </div>
                       <div className="history_icon"><GiSpanner/></div>
                       <div className="history_text">
                         <p>GK Engineering</p><p>마스크설비 제작 및 관리감독</p>
-                      </div>
-                    </div>
-                    <div className="history_wrap">
-                      <div className="history_date">2021.02 ~ 2020.11 </div>
-                      <div className="history_icon"><HiOfficeBuilding/></div>
-                      <div className="history_text">
-                        <p>LG Uplus 부산본점</p><p>고객지원관리부 일반응대관리</p>
                       </div>
                     </div>
                     <div className="history_wrap">
