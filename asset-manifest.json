@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/front_hosang/static/css/main.03f251b0.css",
-    "main.js": "/front_hosang/static/js/main.0f8817d1.js",
+    "main.js": "/front_hosang/static/js/main.a19c6256.js",
     "static/js/787.fb771931.chunk.js": "/front_hosang/static/js/787.fb771931.chunk.js",
     "static/media/movie.webm": "/front_hosang/static/media/movie.b3f4df36b785a7ff7442.webm",
     "static/media/baggu.mp4": "/front_hosang/static/media/baggu.43c93d2d248bc41044ba.mp4",
@@ -27,11 +27,11 @@
     "static/media/logo.svg": "/front_hosang/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/front_hosang/index.html",
     "main.03f251b0.css.map": "/front_hosang/static/css/main.03f251b0.css.map",
-    "main.0f8817d1.js.map": "/front_hosang/static/js/main.0f8817d1.js.map",
+    "main.a19c6256.js.map": "/front_hosang/static/js/main.a19c6256.js.map",
     "787.fb771931.chunk.js.map": "/front_hosang/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03f251b0.css",
-    "static/js/main.0f8817d1.js"
+    "static/js/main.a19c6256.js"
   ]
 }
