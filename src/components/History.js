@@ -26,7 +26,7 @@ export const History = () => {
                       <div className="history_date">2013.03</div>
                       <div className="history_icon"><FaUserGraduate/></div>
                       <div className="history_text">
-                        <p>동명대학교 입학</p><p>심리학과</p>
+                        <p>부경대학교 입학</p>
                       </div>
                     </div>
                     <div className="history_wrap">
@@ -40,7 +40,7 @@ export const History = () => {
                       <div className="history_date">2018.11 </div>
                       <div className="history_icon"><FaUserGraduate/></div>
                       <div className="history_text">
-                        <p>동명대학교 중퇴</p><p>심리학과</p>
+                        <p>부경대학교 중퇴</p><
                       </div>
                     </div>
                   </div>}
