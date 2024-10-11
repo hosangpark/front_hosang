@@ -8,6 +8,7 @@ import meter7 from "../assets/img/Jquery.png";
 import meter8 from "../assets/img/Bootstrap.png";
 import meter9 from "../assets/img/git.png";
 import meter10 from "../assets/img/github.png";
+import meter11 from "../assets/img/Type.png";
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
 
@@ -29,6 +30,10 @@ export const Skills = () => {
                 <div className="skills">
                     <img src={meter3} alt="Image" />
                     <h5>JS</h5>
+                </div>
+                <div className="skills">
+                    <img src={meter11} alt="Image" />
+                    <h5>TypeScript</h5>
                 </div>
             </div>
             <div className="skill-box">
