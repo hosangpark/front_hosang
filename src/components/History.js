@@ -40,7 +40,7 @@ export const History = () => {
                       <div className="history_date">2018.11 </div>
                       <div className="history_icon"><FaUserGraduate/></div>
                       <div className="history_text">
-                        <p>대학교 중퇴</p><
+                        <p>대학교 중퇴</p>
                       </div>
                     </div>
                   </div>}
@@ -56,10 +56,29 @@ export const History = () => {
                       </div>
                     </div>
                     <div className="history_wrap">
-                      <div className="history_date">2022.03 ~ 2020.09 </div>
+                      <div className="history_date">2022.03 ~ 2022.09 </div>
                       <div className="history_icon"><HiDesktopComputer/></div>
                       <div className="history_text">
                         <p>부산 그린컴퓨터 아카데미</p><p>프론트엔드 - React 과정 수료</p>
+                      </div>
+                    </div>
+                  </div>}
+              </TrackVisibility>
+            <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                    <div className="history_wrap">
+                      <div className="history_date">2022.12 ~ 2023.08 </div>
+                      <div className="history_icon"><HiDesktopComputer/></div>
+                      <div className="history_text">
+                        <p>코딩코리아 디몬스터</p><p>웹 & 앱 React Naive, React 프론트엔드 개발</p>
+                      </div>
+                    </div>
+                    <div className="history_wrap">
+                      <div className="history_date">2024.01 ~ 2024.06 </div>
+                      <div className="history_icon"><HiDesktopComputer/></div>
+                      <div className="history_text">
+                        <p>쿠팡</p><p>Selection & Catalog 관리 및 검열 업무</p>
                       </div>
                     </div>
                   </div>}
